@@ -15,10 +15,10 @@
   <body>
     <header>
       <nav>
-        <div class="left">Bishwa's Portfolio</div>
+        <div class="left">Portfolio</div>
         <div class="right">
             <ul>
-                <li><a href="/">Home</li></a>
+                <li><a href="/index.html">Home</li></a>
                 <li><a href="/">About</li></a>
                 <li><a href="/">services</li></a>
                 <li><a href="/">Contact</li></a>
@@ -26,5 +26,34 @@
         </div>
       </nav>
     </header>
+
+    <main>
+        <section class="firstSection">
+          <div class="leftSection"> 
+            <img src="bishwaGRG.jpg" alt="bishwa profile pic">
+          </div>
+            <div class="rightSection">
+                Hi, This is <span class="purple">Bishwa Gurung</span> 
+                <div>I'm a Enthusiastic</div>
+                <span id="element"></span><br>
+                <button id="resumeBtn"  type="button">Download Resume</button>
+                <button id="githubButton" type="button">Visit Github</button>
+            </div>
+        </section>
+        <hr style="margin: 60px 40px;">
+        <sectionn class="secondSection">
+
+        </sectionn>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','Full Stack Developer','Cyber Security Analyst', 'Musician', 'Learner'],
+      typeSpeed: 50,
+      showCursor: false,
+    });
+  </script> 
+  <script src="script.js"></script>
   </body>
 </html>
