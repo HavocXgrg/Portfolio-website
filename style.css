@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ body{
+    background-color: rgb(9, 13, 51);
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+ }
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(15 32 91 / 27%);
+    height: 100px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 22px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ul li a:hover{
+    color: rgb(126, 126, 236);
+    font-size: 1.02rem;
+}
+.left{
+    font-size: 2.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+}
+.rightSection{
+    padding: 10px;
+    font-size: 2.5rem;
+    width: 40%;
+    margin: 80px 140px 0 0;
+}
+.leftSection{
+    width: 30%;
+    height: 60vh;
+    margin: 40px 0 0 280px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.purple{
+    color: rgb(175, 128, 219);
+}
+#element{
+    color: rgb(175, 128, 219);
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftSection, .rightSection {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .left {
+        font-size: 2rem;
+    }
+
+    .rightSection {
+        font-size: 1.2rem;
+    }
+}
