@@ -26,6 +26,7 @@ nav ul li a{
     text-decoration: none;
     color: aliceblue;
 }
+
 nav ul li a:hover{
     color: rgb(126, 126, 236);
     font-size: 1.02rem;
@@ -52,6 +53,8 @@ nav ul li a:hover{
 img{
     max-width: 100%;
     max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 8px; 
     
 }
 .purple{
@@ -60,9 +63,40 @@ img{
 #element{
     color: rgb(175, 128, 219);
 }
+button{
+    border-color: white;
+    background-color: rgb(30, 30, 108);
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 8px;
+    cursor: pointer;
+}
+.leftSection img {
+    /* Initial state: moved to the left and invisible */
+    transform: translateX(-100%);
+    opacity: 0;
+
+    /* Animation to bring it in */
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+/* Defining the keyframes for the slide-in animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start off-screen on the left */
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at its normal position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
 
 /* Media Queries for Responsive Design */
 
+/* Existing media query for screens <= 768px */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -81,11 +115,17 @@ img{
     }
 
     .leftSection, .rightSection {
-        width: 90%;
+        width: 90%; /* Adjust section width */
         margin: 20px 0;
+    }
+
+    .leftSection img {
+        max-width: 100%; /* Ensures image scales to fit within the new container width */
+        height: auto; /* Maintain aspect ratio */
     }
 }
 
+/* Existing media query for screens <= 480px */
 @media (max-width: 480px) {
     .left {
         font-size: 2rem;
@@ -93,5 +133,16 @@ img{
 
     .rightSection {
         font-size: 1.2rem;
+    }
+
+    .leftSection {
+        width: 100%; /* Full width for mobile screens */
+        height: auto; /* Allow container to adjust height dynamically */
+        margin: 10px 0; /* Less margin for smaller screens */
+    }
+
+    .leftSection img {
+        max-width: 100%; /* Image takes full width of the container */
+        height: auto; /* Preserve aspect ratio */
     }
 }
