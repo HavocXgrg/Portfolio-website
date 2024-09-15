@@ -15,22 +15,22 @@
   <body>
     <header>
       <nav>
-        <div class="left">Portfolio</div>
+        <div class="left">𝖕𝖔𝖗𝖙𝖋𝖔𝖑𝖎𝖔</div>
         <div class="right">
             <ul>
-                <li><a href="/index.html">Home</li></a>
-                <li><a href="/">About</li></a>
-                <li><a href="/">services</li></a>
-                <li><a href="/">Contact</li></a>
+                <li><a href="#sectionHome">Home</li></a>
+                <li><a href="#sectionAbout">About</li></a>
+                <li><a href="#sectionServices">services</li></a>
+                <li><a href="#sectionContact">Contact</li></a>
             </ul>
         </div>
       </nav>
     </header>
 
     <main>
-        <section class="firstSection">
+        <section class="firstSection" id="sectionHome">
           <div class="leftSection"> 
-            <img src="bishwaGRG.jpg" alt="bishwa profile pic">
+            <img src="/images/PngItem_1127587.png" alt="bishwa profile pic">
           </div>
             <div class="rightSection">
                 Hi, This is <span class="purple">Bishwa Gurung</span> 
@@ -40,11 +40,69 @@
                 <button id="githubButton" type="button">Visit Github</button>
             </div>
         </section>
-        <hr style="margin: 60px 40px;">
-        <sectionn class="secondSection">
+        <hr style="margin: 60px 40px 0;">
 
-        </sectionn>
+        <h2 id="sectionAbout">𝓐𝓫𝓸𝓾𝓽 𝓜𝓮</h2>
+        <section class="secondSection" id="sectionAbout">
+          <div class="leftSection2">
+            <div class="paragraph">
+              "I am an enthusiastic learner with a Bachelor's degree in Information Technology <span class="purple">(Bsc.IT)</span>. I have a deep passion for programming and have gained solid knowledge in both web development and cyber security. Constantly driven by curiosity, I am always looking for opportunities to expand my skill set and take on new challenges in the tech world.
+              <div style="margin-top: 8px;">
+                Beyond the tech world, I enjoy playing football, strumming the guitar, and engaging in strategic battles over a game of chess. These hobbies not only fuel my creativity but also keep me balanced and focused."
+              </div>
+
+            </div>
+            <div class="skills">
+              <h1>Skills</h1>
+              <ul >
+                <li> Web Development.</li>
+                <li>Networking.</li>
+                <li>Windows and Linux OS.</li>
+                <li>Programming languages like C, kotlin and Python.</li>
+                <li>Android Development</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="rightSection2">
+            <img src="/images/iam.jpg" alt="my photo">
+          </div>
+          
+        </section>
+        <hr style="margin: 160px 40px 0;">
+
+        <h2 id="sectionServices">𝓢𝓮𝓻𝓿𝓲𝓬𝓮𝓼</h2>
+        <section class="sectionServices" id="sectionServices">
+          <div class="box1">
+            <img src="/images/web.png" alt="">
+            <div class="content">
+              <p class="box-text">Web Designing</p>
+            </div>
+          </div>
+          <div class="box2">
+            <img src="/images/networking.png" alt="">
+            <div class="content">
+              <p class="box-text">Networking</p>
+            </div>
+          </div>
+          <div class="box3">
+            <img src="images/appdev.png" alt="">
+            <div class="content">
+              <p class="box-text">App Development</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- <hr style="margin: 60px 40px 0;"> -->
+        <section class="sectionContact" id="sectionContact">
+
+        </section>
     </main>
+
+
+
+
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
      <!-- Setup and start animation! -->
   <script>
@@ -53,6 +111,7 @@
       typeSpeed: 50,
       showCursor: false,
     });
+    
   </script> 
   <script src="script.js"></script>
   </body>
