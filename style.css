@@ -35,8 +35,10 @@ nav ul li a:hover{
     color: rgb(126, 126, 236);
     font-size: 1.02rem;
 }
-.left{
+.portfolio-link{
     font-size: 2.5rem;
+    text-decoration: none;
+    color: #ccc;
 }
 .firstSection{
     display: flex;
@@ -170,16 +172,73 @@ h2{
 }
   
 .sectionContact{
+    position: relative;
     height: 80vh;
     margin-top: 60px;
+}
+.bg-img{
+    
+    height: 80vh;
     background-image: url(/images/web-development.jpg);
-    opacity: 0.09  ;
+    opacity: 0.2;
+    
+}
+.form-section{
+    position: absolute;
+    top: 16%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    min-width: 500px;
+    min-height: auto;
+}
+.form-section input{
+    margin: 14px;
+    width: 640px;
+    height: 4.4vh;
+    padding: 10px;
+    color: antiquewhite;
+    background-color: rgba(77, 63, 201, 0); 
+    border: none;
+    border-bottom: 1px solid white;
+}
+::placeholder{
+    color: aliceblue;
+    font-size: 1rem;
+}
+#submit-btn{
+    width: 90px;
+    background-color: rgba(77, 63, 201, 0); 
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin: 10px;
 }
 
-
-
-
-
+.footer {
+    position: relative; /* or fixed if you want it to stick at the bottom */
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(77, 63, 201, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
 .leftSection img {
     /* Initial state: moved to the left and invisible */
     transform: translateX(-100%);
