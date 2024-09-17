@@ -2,75 +2,87 @@
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
- body{
+body {
     background-color: rgb(9, 12, 33);
     font-family: "Poppins", sans-serif;
     color: aliceblue;
- }
-nav{
-    display:flex;
+}
+
+nav {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(15 32 91 / 27%);
     height: 100px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0 22px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: aliceblue;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(126, 126, 236);
     font-size: 1.02rem;
 }
-.portfolio-link{
+
+.portfolio-link {
     font-size: 2.5rem;
     text-decoration: none;
     color: #ccc;
 }
-.firstSection{
+
+.firstSection {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     padding: 20px;
-
 }
-.rightSection{
+
+.rightSection {
     padding: 10px;
     font-size: 2.5rem;
     width: 40%;
     margin: 80px 140px 0 120px;
 }
-.leftSection{
+
+.leftSection {
     width: 30%;
     height: 60vh;
     margin: 40px 0 0 120px;
 }
-img{
+
+img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 8px;  
+    object-fit: cover;
+    border-radius: 8px;
 }
-.purple{
+
+.purple {
     color: rgb(175, 128, 219);
 }
-#element{
+
+#element {
     color: rgb(175, 128, 219);
 }
-button{
+
+button {
     border-color: white;
     background-color: rgb(30, 30, 108);
     color: aliceblue;
@@ -79,34 +91,37 @@ button{
     margin: 8px;
     cursor: pointer;
 }
-
-.secondSection{
+ /* about me section*/
+.secondSection {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     height: auto;
 }
-h2{
+
+h2 {
     display: flex;
     justify-content: center;
     font-size: 2.8rem;
     margin-top: 10px;
     font-weight: 200;
     color: rgb(238, 229, 214);
-   
 }
-.rightSection2{
+
+.rightSection2 {
     width: 30%;
     height: 60vh;
     margin: 40px 80px 0 20px;
 }
-.leftSection2{
+
+.leftSection2 {
     width: 40%;
     height: 60vh;
     margin: 40px 0 0 120px;
 }
-.paragraph{
-    font-size: 1.22rem;
+
+.paragraph {
+    font-size: 1.2rem;
     font-style: italic;
     font-weight: 300;
     color: rgba(217, 217, 137, 0.848);
@@ -114,21 +129,24 @@ h2{
     line-height: 30px;
     overflow: hidden;
 }
-.skills{
+
+.skills {
     margin-top: 10px;
     margin-left: 20px;
-    
 }
-.skills ul{
+
+.skills ul {
     font-size: 1.15rem;
-    line-height: 40px;
+    line-height: 2.2rem;
 }
-.sectionServices{
+
+.sectionServices {
     height: auto;
     display: flex;
     justify-content: space-around;
     margin-top: 32px;
 }
+
 .box1, .box2, .box3 {
     position: relative;
     width: 400px; /* Adjust the size */
@@ -136,11 +154,11 @@ h2{
     overflow: hidden;
     border: 1px solid #ccc;
 }
-  
+
 .box1 img, .box2 img, .box3 img {
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease; /* Smooth transition effect */
+    transition: all 0.3s ease;
 }
 
 .box1 .content, .box2 .content, .box3 .content {
@@ -149,41 +167,41 @@ h2{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Hide by default */
-    transition: opacity 0.3s ease; /* Smooth fade-in transition */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
-  
+
 .box-text {
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-weight: bold;
 }
-  
+
 .box1:hover .content, .box2:hover .content, .box3:hover .content {
-    opacity: 1; /* Show the overlay and text on hover */
+    opacity: 1;
 }
-  
+
 .box1:hover img, .box2:hover img, .box3:hover img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
-  
-.sectionContact{
+
+.sectionContact {
     position: relative;
     height: 80vh;
     margin-top: 60px;
 }
-.bg-img{
-    
+
+.bg-img {
     height: 80vh;
     background-image: url(/images/web-development.jpg);
     opacity: 0.2;
-    
 }
-.form-section{
+
+.form-section {
     position: absolute;
     top: 16%;
     left: 30%;
@@ -191,124 +209,182 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
     min-width: 500px;
     min-height: auto;
 }
-.form-section input{
+
+.form-section input {
     margin: 14px;
     width: 640px;
     height: 4.4vh;
     padding: 10px;
     color: antiquewhite;
-    background-color: rgba(77, 63, 201, 0); 
+    background-color: rgba(77, 63, 201, 0);
     border: none;
     border-bottom: 1px solid white;
 }
-::placeholder{
+
+::placeholder {
     color: aliceblue;
     font-size: 1rem;
 }
-#submit-btn{
+
+#submit-btn {
     width: 90px;
-    background-color: rgba(77, 63, 201, 0); 
+    background-color: rgba(77, 63, 201, 0);
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     justify-content: center;
-    
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 2.5rem;
     margin: 10px;
 }
+.social-icons a:hover{
+    font-size: 2.6rem;
+    color: #ccc;
+}
 
 .footer {
-    position: relative; /* or fixed if you want it to stick at the bottom */
+    position: relative;
     bottom: 0;
     width: 100%;
-    background-color:rgba(77, 63, 201, 0);
+    background-color: rgba(77, 63, 201, 0);
     color: white;
     text-align: center;
     padding: 10px 0;
-  }
-  
-  .footer p {
+}
+
+.footer p {
     margin: 0;
     font-size: 14px;
-  }
-  
+}
+
 .leftSection img {
-    /* Initial state: moved to the left and invisible */
     transform: translateX(-100%);
     opacity: 0;
-
-    /* Animation to bring it in */
     animation: slideIn 1.5s ease-out forwards;
 }
-/* Defining the keyframes for the slide-in animation */
+
 @keyframes slideIn {
     0% {
-        transform: translateX(-100%); /* Start off-screen on the left */
-        opacity: 0; /* Invisible */
+        transform: translateX(-100%);
+        opacity: 0;
     }
     100% {
-        transform: translateX(0); /* End at its normal position */
-        opacity: 1; /* Fully visible */
+        transform: translateX(0);
+        opacity: 1;
     }
 }
-
 
 /* Media Queries for Responsive Design */
 
-/* Existing media query for screens <= 768px */
+
+/* Tablet and smaller (max-width: 768px) */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         text-align: center;
+        height: auto;
     }
+
     nav ul {
         flex-direction: column;
+        padding: 0;
     }
+
     nav ul li {
         margin: 10px 0;
     }
 
-    .firstSection {
+    .firstSection, .secondSection {
         flex-direction: column;
         align-items: center;
     }
 
     .leftSection, .rightSection {
-        width: 90%; /* Adjust section width */
+        width: 80%;
         margin: 20px 0;
     }
+    .rightSection2, .leftSection2 {
+        width: 90%;
+        margin: 10px 0;
+    }
 
-    .leftSection img {
-        max-width: 100%; /* Ensures image scales to fit within the new container width */
-        height: auto; /* Maintain aspect ratio */
+    .paragraph {
+        font-size: 1.1rem;
+        line-height: 28px;
+    }
+
+    .skills ul {
+        font-size: 1rem;
+        line-height: 35px;
+    }
+
+    .box1, .box2, .box3 {
+        width: 80%;
+        height: auto;
+    }
+
+    .form-section {
+        min-width: 90%;
+    }
+
+    .form-section input {
+        width: 100%;
     }
 }
 
-/* Existing media query for screens <= 480px */
+/* Mobile and smaller (max-width: 480px) */
 @media (max-width: 480px) {
-    .left {
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .portfolio-link {
         font-size: 2rem;
     }
 
-    .rightSection {
-        font-size: 1.2rem;
+    h2 {
+        font-size: 2rem;
     }
 
-    .leftSection {
-        width: 100%; /* Full width for mobile screens */
-        height: auto; /* Allow container to adjust height dynamically */
-        margin: 10px 0; /* Less margin for smaller screens */
+    .rightSection, .leftSection{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .secondSection{
+        flex-direction: column;
+    }
+    .rightSection2, .leftSection2{
+        width: 50%;
+        margin: 20px 0;
+        flex-direction: column;
+    }
+    .rightSection2 img {
+        width: 100%; /* Full-width image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .paragraph {
+        font-size: 1rem;
+        line-height: 2rem;
     }
 
-    .leftSection img {
-        max-width: 100%; /* Image takes full width of the container */
-        height: auto; /* Preserve aspect ratio */
+    .skills ul {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .form-section input {
+        font-size: 0.9rem;
+    }
+
+    .box1, .box2, .box3 {
+        width: 100%;
+        height: auto;
     }
 }
